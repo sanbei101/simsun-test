@@ -16,8 +16,6 @@ def build_one(style, weight_num, embolden):
     font = fontforge.open(SRC)
 
     font.selection.all()
-    font.changeFontType("opentype")
-    font.changeFontType("truetype")
     
     font.removeOverlap()
     font.correctDirection()
